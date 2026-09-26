@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Focus — a quiet timer</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="wrap">
+
+    <header class="head">
+      <h1>Focus</h1>
+      <p class="tagline">One task. One block of time.</p>
+    </header>
+
+    <section class="timer-block">
+      <div class="mode-switch" role="tablist" aria-label="Session length">
+        <button class="mode active" data-mins="25" role="tab" aria-selected="true">25</button>
+        <button class="mode" data-mins="15" role="tab" aria-selected="false">15</button>
+        <button class="mode" data-mins="50" role="tab" aria-selected="false">50</button>
+      </div>
+
+      <div class="clock" id="clock">25:00</div>
+
+      <input
+        type="text"
+        id="taskInput"
+        class="task-input"
+        placeholder="What are you focusing on?"
+        maxlength="80"
+        autocomplete="off"
+      />
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary">Start</button>
+        <button id="resetBtn" class="btn ghost">Reset</button>
+      </div>
+    </section>
+
+    <section class="log-section">
+      <div class="log-head">
+        <h2>Sessions</h2>
+        <span id="logCount" class="log-count">0 today</span>
+      </div>
+      <ul id="logList" class="log-list">
+        <li class="log-empty" id="logEmpty">Nothing logged yet — finish a session to see it here.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
