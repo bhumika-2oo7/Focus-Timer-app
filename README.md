@@ -1,7 +1,20 @@
-
+## TIMER
 A simple focus timer made with **HTML, CSS, and JavaScript**.
 
-I made this project to have a quiet and simple place where I can focus on one task at a time without too many things on the screen.
+HTML
+feat: make structure
+
+CSS
+feat: make design
+
+Javascript
+feat: make function
+
+## How to play
+Press start button to start the timer
+Press stop button to stop
+Press reset button to reset
+
 
 ## What it does
 
@@ -11,19 +24,6 @@ I made this project to have a quiet and simple place where I can focus on one ta
 * Shows the remaining time clearly
 * Saves completed sessions in the browser
 
-## Design
-
-* Dark background: `#0F1115`
-* Warm gold color: `#D4A054`
-* **Fraunces** for the timer numbers
-* **Inter** for the normal text
-* Simple centered layout
-  
-## Built With
-
-* HTML
-* CSS
-* JavaScript
 
 
 This project is free to use and modify.
